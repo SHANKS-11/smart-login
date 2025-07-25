@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <form id="signupForm">
+      <div class="container my-5 text-center">
+        <div class="group w-75 m-auto p-5">
+          <h1>Smart Login System</h1>
+
+          <input id="signupName" type="text" class="form-control my-3 selectedInput" placeholder="Enter your name" />
+          <div id="signupNameError" class="alert alert-danger d-none">Name must be at least 3 characters.</div>
+
+          <input id="signupEmail" type="email" class="form-control my-3 selectedInput" placeholder="Enter your email" />
+          <div id="signupEmailError" class="alert alert-danger d-none">Please enter a valid email address.</div>
+          <div id="exist" class="alert alert-danger d-none">This email is already registered.</div>
+
+          <input id="signupPassword" type="password" class="form-control my-3 selectedInput" placeholder="Enter your password" />
+          <div id="signupPasswordError" class="alert alert-danger d-none">
+            Must contain 8+ characters, at least 1 capital, 1 number & 1 special character.
+          </div>
+
+          <div id="success" class="alert alert-success d-none">Registration successful!</div>
+
+          <button type="submit" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+
+          <p class="text-white">
+            Already have an account?
+            <a href="./index.html" class="text-white">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
